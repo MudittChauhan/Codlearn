@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+<title>:: New User Registration ::</title>
+
+<link rel="stylesheet" href="css/fb.css" type="text/css" />
+</head>
+
+<body class="login">
+
+	<div id="facebook-Bar">
+		<div id="facebook-Frame"></div>
+	</div>
+
+	<div class="loginbox radius">
+		<h2 style="color: #141823; text-align: center;">Welcome to JOE</h2>
+
+		<div class="loginheader">
+			<h4 class="title">This is Admin panel for User Registration</h4>
+		</div>
+
+		<div class="loginform">
+
+			<form id="login" method="get">
+				<p>
+					<input type="text" id="firstname" name="firstname"
+						placeholder="First Name" value="" class="radius mini" /> <input
+						type="text" id="lastname" name="lastname" placeholder="Last Name"
+						value="" class="radius mini" />
+				</p>
+				<p>
+					<input type="text" id="email" name="email"
+						placeholder="Your valid Email (Ex. abc@xyz.com)" value=""
+						class="radius"
+						pattern="[A-Za-z0-9._%+-]{3,}@[a-zA-Z]{3,}([.]{1}[a-zA-Z]{2,}|[.]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,})" />
+				</p>
+				<p>
+					<input type="password" id="password" name="password"
+						placeholder="New Password" class="radius" />
+				</p>
+				<p>
+					<input type="dropdown" id="course" name="course"
+						placeholder="Your Course" value="" class="radius" />
+				</p>
+				<p>
+					<input type="text" id="college" name="college"
+						placeholder="College/University" value="" class="radius" />
+				</p>
+				<br> <br>
+				<br>
+				<button class="radius title" name="signup" value="Save"
+					onclick="form.action='Form';">
+					<b>Save</b>
+				</button>
+				&nbsp;&nbsp;
+				<button class="radius title" name="signup" value="Finish"
+					onclick="form.action='Welcome.html';">
+					<b>Finish</b>
+				</button>
+				&nbsp;&nbsp;
+			</form>
+		</div>
+	</div>
+</body>
+</html>

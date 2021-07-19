@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Option</title>
+<link rel="stylesheet" href="css/fb.css">
+</head>
+
+<body class="login">
+<script>
+HttpSession session1=request.getSession();
+    if
+            (session.getAttribute("name")==null)
+    {
+        response.sendRedirect("UserLogin.jsp?msg=Please login First");
+    }
+</script>
+	<div id="facebook-Bar">
+		<div id="facebook-Frame"></div>
+	</div>
+	<div class="loginbox radius">
+		<h2 style="color: #ff9966; text-align: center;">:: Welcome Admin,
+			Select your Options ::</h2>
+		<div class="loginheader">
+			<form id="login" method="post">
+				<div class="loginform">
+					<br>
+					<br>
+					<button class="radius title" name="signup" value="Register"
+						onclick="form.action='Form.html';">
+						<b>User Registration</b>
+					</button>
+					&nbsp;&nbsp;
+					<button class="radius title" name="signup" value="Paper"
+						onclick="form.action='SetPaper.html';">
+						<b>Set Paper</b>
+					</button>
+					&nbsp;&nbsp;
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

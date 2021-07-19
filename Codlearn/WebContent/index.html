@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>jQuery Traversing next</title>
+<script src="http://code.jquery.com/jquery-2.1.1.js"></script>
+ 
+<style>
+  div {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    float: left;
+    border: 1px black solid;
+    padding: 3px;
+  }
+</style>
+ 
+</head>
+<body>
+ 
+
+ 
+ <div>div1</div>
+<div>div2</div>
+<div>div3</div>
+<div>div4</div>
+<div>div5</div>
+<div id="startPrev">div6</div>
+<p><button>Move to Previous</button></p>
+  
+<script>
+var $currDiv = $( "#startPrev" );
+$currDiv .css( "background", "red" );
+$( "button" ).click(function() {
+  $currDiv  = $currDiv .prev();
+  $( "div" ).css( "background", "" );
+  $currDiv .css( "background", "red" );
+});
+</script>
+  
+</body>
+</html>

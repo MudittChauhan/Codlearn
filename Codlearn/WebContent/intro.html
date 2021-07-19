@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>:: Welcome To JOE ::</title>
+<link rel="stylesheet" href="fb.css" type="text/css" />
+<script type="text/javascript">
+function whichsite(form){
+	var sites = form.elements.user, i = sites.length;
+	while (--i > -1){
+		if(sites[i].checked){
+			return sites[i].value;
+		}
+	}
+}
+</script>
+
+<style>
+p.big {
+	line-height: 2.1;
+}
+</style>
+</head>
+<body class="login">
+	<div id="facebook-Bar">
+		<div id="facebook-Frame"></div>
+	</div>
+	<div class="loginbox radius">
+		<h2 style="color: #141823; text-align: center;">Welcome to JOE</h2>
+
+		<div class="loginheader">
+			<div class="loginform">
+				<form id="login" action="#"
+					onsubmit="window.open(whichsite(this), '_blank'); return false;"
+					method="get">
+					<p align="justify" class="big">
+						Welcome On JOE System. Java Online Examination System project
+						could be a web portal which is developed or implemented in java
+						domain or platform. This project is helpful for students to
+						practice different java mock examinations from this site. In
+						current generation lots of the examinations are conducted through
+						online system. This project will help students to get practiced to
+						online examination method by taking mock tests from this web
+						portal. Java Online Examination System portal is implemented in 2
+						modules::<br>
+						<b>1) Student (User) examination module, and<br>2) Admin
+							module.
+						</b><br>Admin module will add multiple Java questions according
+						to different level, so students can easily take test step-by-step.
+						In Student examination module, students as a User are required to
+						register themselves, which is mandatory, after which they are able
+						to participate in the online test. <i><b>GOOD LUCK</b></i>
+					</p>
+					<br />
+					<table align="center">
+						<tr>
+							<style>
+.loginbox input {
+	width: 120px;
+}
+</style>
+							<td><b>User Registration<input type="radio"
+									style="vertical-align: middle; margin: 6px;" name="user"
+									value="http://localhost:8080/JOE/Form.html" checked></b></td>
+							<td><b>Login<input type="radio"
+									style="vertical-align: middle; margin: 6px;" name="user"
+									value="http://localhost:8080/JOE/Userlogin.html"></b><br></td>
+						</tr>
+					</table>
+					<br>
+					<p align="center">
+					<p>
+						<button class="radius title" name="signup">
+							<b>Go For JOE</b>
+						</button>
+					</p>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
